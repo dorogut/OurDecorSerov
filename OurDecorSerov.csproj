@@ -114,11 +114,20 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <None Include="Source\ER Диаграмма Серов.pdf" />
+    <None Include="Source\ER Диаграмма Серов.vsdx" />
+    <None Include="Source\Блок-схема 1.pdf" />
+    <None Include="Source\Блок-схема 1.vsdx" />
+    <None Include="Source\Блок-схема 2.pdf" />
+    <None Include="Source\Блок-схема 2.vsdx" />
+    <None Include="Source\Таблицы импорта.xlsx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Source\SQL скрипт Серов.sql" />
+  </ItemGroup>
   <ItemGroup>
     <Page Include="Pages\AddProductPage.xaml">
       <SubType>Designer</SubType>
