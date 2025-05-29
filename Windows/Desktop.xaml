@@ -1,0 +1,30 @@
+﻿<Window x:Class="OurDecorSerov.Windows.Desktop"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OurDecorSerov.Windows"
+        mc:Ignorable="d"
+        Title="Наш декор" Height="450" Width="800" ResizeMode="NoResize" Icon="/OurDecorSerov;component/Data/Images/Наш декор.ico">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#BBD9B2"/>
+        <Grid Grid.Row="2" Background="#BBD9B2"/>
+        
+        <Frame x:Name="DesktopFrame" Grid.Row="1" NavigationUIVisibility="Hidden"/>
+        
+        <Image Source="/Data/Images/Наш декор.png" Margin="10,0,734,0" Height="40" Width="40" Grid.Row="0"/>
+        
+        <TextBlock HorizontalAlignment="Left" Margin="350,0,0,0" TextWrapping="Wrap" Text="Наш декор" VerticalAlignment="Top" FontFamily="Gabriola" FontSize="30" RenderTransformOrigin="0.416,0.133" Width="109"/>
+        <Button x:Name="BtnProduct" Content="Продукция" Background="#2D6033" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="122" Height="30" FontFamily="Gabriola" FontSize="20" Click="BtnProduct_Click"/>
+
+        <Button x:Name="BtnBack" Content="Назад" Background="#2D6033" HorizontalAlignment="Left" Margin="535,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="122" Height="30" FontFamily="Gabriola" FontSize="20" Click="BtnBack_Click"/>
+        <Button x:Name="BtnPrev" Content="Вперед" Background="#2D6033" HorizontalAlignment="Left" Margin="662,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="122" Height="30" FontFamily="Gabriola" FontSize="20" Click="BtnPrev_Click"/>
+        <Button x:Name="BtnAddProduct" Content="Добавление продукции" Background="#2D6033" HorizontalAlignment="Left" Margin="137,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="159" Height="30" FontFamily="Gabriola" FontSize="20" Click="BtnAddProduct_Click"/>
+        <Button x:Name="BtnHome" Content="Домой" Background="#2D6033" HorizontalAlignment="Left" Margin="408,10,0,0" Grid.Row="2" VerticalAlignment="Top" Width="122" Height="30" FontFamily="Gabriola" FontSize="20" Click="BtnHome_Click"/>
+    </Grid>
+</Window>

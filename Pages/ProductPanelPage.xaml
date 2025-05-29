@@ -1,0 +1,36 @@
+﻿<Page x:Class="OurDecorSerov.Pages.ProductPanelPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OurDecorSerov.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="350" d:DesignWidth="800"
+      Title="ProductPanelPage">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="1*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" Background="#BBD9B2"/>
+        <DataGrid x:Name="DtgProductPanel" IsReadOnly="True" Grid.Row="1" AutoGenerateColumns="False">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="Тип" Binding="{Binding ProductType}"/>
+                <DataGridTextColumn  Header="Наименование продукта" Binding="{Binding ProductName}"/>
+                <DataGridTextColumn  Header="Артикул" Binding="{Binding Arcticle}"/>
+                <DataGridTextColumn  Header="Минимальная стоимость для партнера" Binding="{Binding MinCostForPartner}"/>
+                <DataGridTextColumn  Header="Ширина" Binding="{Binding WidtRulon}"/>
+                <DataGridTextColumn  Header="Стоимость" Binding="{Binding Materials.AmountStorage}"/>
+                <DataGridTemplateColumn Width="auto">
+                    <DataGridTemplateColumn.CellTemplate>
+                        <DataTemplate>
+                            <Button Content="Редактировать" Name="BtnEditProductPage" Background="#2D6033" FontFamily="Gabriola" FontSize="20" Click="BtnEditProductPage_Click"/>
+                        </DataTemplate>
+                    </DataGridTemplateColumn.CellTemplate>
+                </DataGridTemplateColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <TextBlock HorizontalAlignment="Left" Margin="325,0,0,0" TextWrapping="Wrap" Text="Продукция" VerticalAlignment="Top" FontFamily="Gabriola" FontSize="30" Grid.RowSpan="2"/>
+    </Grid>
+</Page>

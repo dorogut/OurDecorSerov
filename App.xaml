@@ -1,0 +1,9 @@
+﻿<Application x:Class="OurDecorSerov.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:OurDecorSerov"
+             StartupUri="Windows/Desktop.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>
