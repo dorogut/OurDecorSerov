@@ -16,12 +16,12 @@
         <Grid Grid.Row="0" Background="#BBD9B2"/>
         <DataGrid x:Name="DtgProductPanel" IsReadOnly="True" Grid.Row="1" AutoGenerateColumns="False">
             <DataGrid.Columns>
-                <DataGridTextColumn  Header="Тип" Binding="{Binding ProductType}"/>
-                <DataGridTextColumn  Header="Наименование продукта" Binding="{Binding ProductName}"/>
-                <DataGridTextColumn  Header="Артикул" Binding="{Binding Arcticle}"/>
-                <DataGridTextColumn  Header="Минимальная стоимость для партнера" Binding="{Binding MinCostForPartner}"/>
-                <DataGridTextColumn  Header="Ширина" Binding="{Binding WidtRulon}"/>
-                <DataGridTextColumn  Header="Стоимость" Binding="{Binding Materials.AmountStorage}"/>
+                <DataGridTextColumn  Header="Тип" Binding="{Binding ProductType}" FontFamily="Gabriola" FontSize="16" />
+                <DataGridTextColumn  Header="Наименование продукта" Binding="{Binding ProductName}"  FontFamily="Gabriola" FontSize="16"/>
+                <DataGridTextColumn  Header="Артикул" Binding="{Binding Arcticle}"  FontFamily="Gabriola" FontSize="16"/>
+                <DataGridTextColumn  Header="Минимальная стоимость для партнера" Binding="{Binding MinCostForPartner}" FontFamily="Gabriola" FontSize="16"/>
+                <DataGridTextColumn  Header="Ширина" Binding="{Binding WidtRulon}" FontFamily="Gabriola" FontSize="16"/>
+                <DataGridTextColumn  Header="Стоимость" Binding="{Binding Materials.AmountStorage}" FontFamily="Gabriola" FontSize="16"/>
                 <DataGridTemplateColumn Width="auto">
                     <DataGridTemplateColumn.CellTemplate>
                         <DataTemplate>
